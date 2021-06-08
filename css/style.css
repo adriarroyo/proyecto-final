@@ -4,14 +4,119 @@
     font-size: 14;
 }
 
-.container {
-background-color: rgb(26, 112, 182);
-position: relative;
-max: width 850px;
+.img-logo {
+    margin: 20px;
+    border-radius: 20px;
 }
 
-.container{
-padding-top: 30px;
-padding-bottom: 30px;
-margin: 0px;
+.img-banner {
+    max-width: 1280px;
+    width: 1280;
 }
+
+.h1{
+    color: whitesmoke;
+}
+
+.container {
+background-color: rgb(111, 132, 150);
+max-width: 1280px;
+width: 1280px;
+padding-bottom: 10px;
+}
+
+.menu {
+    background-color:rgb(9, 47, 82);
+    padding: 15px;
+    margin: 15px;
+}
+.span-menu {
+    color: whitesmoke;
+}
+
+.lista-1{
+    background-color: rgb(16, 93, 165);
+    padding: 10px;
+    width: 640px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: whitesmoke;
+}
+
+.lista-2{
+    background-color: rgb(24, 168, 173);
+    padding: 10px;
+    width: 640px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: whitesmoke;
+}
+
+.left {
+    float: left;
+    padding: 20px;
+    margin: 20px;
+}
+
+
+#toggleBloque {
+    margin: 30px;
+    padding: 10px;
+}
+
+.button {
+padding: 10px;
+margin: 30px;
+color: whitesmoke;
+background-color: rgb(9, 47, 82);
+border-radius: 30px;
+}
+
+.slider {
+    width: 1280px;
+    overflow: hidden;
+}
+
+.slider ul{
+    display: flex;
+    padding: 0px;
+    width: 1280px;
+
+    animation: cambio 10s infinite alternate;
+    animation-timing-function: ease-in;
+}
+
+.slider li {
+    width: 1280px;
+    list-style: none;
+}
+
+.slider img{
+    width: 300px;
+}
+
+@keyframes cambio {
+    0% { margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: 0;}
+    45% {margin-left: 0;}
+
+    50% {margin-left:0;}
+    70% {margin-left:0;}
+
+    75% {margin-left:-100%;}
+    100% {margin-left:-100%;}
+}
+
+
+#footer{
+    width: 1280px;
+    color: whitesmoke;
+    background-color:rgb(111, 132, 150);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 0px;
+}
+
