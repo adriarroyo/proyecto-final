@@ -5,7 +5,7 @@
 }
 /* Head */
 .img-logo {
-    margin: 20px;
+    margin: 20px 0px 0px 20px;
     border-radius: 20px;
 }
 
@@ -16,6 +16,8 @@
 
 .h1{
     color: whitesmoke;
+    display: inline-block;
+    margin-bottom: 0px;
 }
 
 .container {
@@ -30,14 +32,14 @@ padding-bottom: 10px;
 .menu {
     background-color:rgb(9, 47, 82);
     padding: 15px;
-    margin: 15px;
+    margin: 20px;
 }
 .span-menu {
     color: whitesmoke;
 }
 
 #footer{
-    width: 1280px;
+    max-width: 1280px;
     color: whitesmoke;
     background-color:rgb(111, 132, 150);
     padding-bottom: 20px;
@@ -54,20 +56,26 @@ padding-bottom: 10px;
 .lista-1{
     background-color: rgb(16, 93, 165);
     padding: 10px;
-    width: 640px;
+    width: 620px;
     margin-top: 20px;
     margin-bottom: 20px;
     color: whitesmoke;
+    position: relative;
 }
 
 .lista-2{
     background-color: rgb(24, 168, 173);
     padding: 10px;
-    width: 640px;
+    width: 620px;
     margin-top: 20px;
     margin-bottom: 20px;
     color: whitesmoke;
+    position: absolute;
+    top: 824px;
+    left: 650px;
 }
+
+
 
 /* Fin Cuadros Listas Index*/
 
@@ -75,8 +83,18 @@ padding-bottom: 10px;
 
 .left {
     float: left;
-    padding: 20px;
-    margin: 20px;
+}
+
+.left img {
+width: 200px;
+margin: 0px 10px 20px 0px;
+}
+
+#parrafo {
+width: 1280px;
+max-width: fit-content;  
+font-family: Tahoma, sans-serif; 
+font-size: 14px;
 }
 
 #toggleBloque {
@@ -84,16 +102,36 @@ padding-bottom: 10px;
     padding: 10px;
 }
 
+#textoOculto {
+    visibility: hidden;
+}
+
 /* Fin Biografía*/
 
 /*Galería*/
+
+.span-galeria{
+    font-size: 32px;
+
+}
 .button {
-padding: 10px;
-margin: 30px;
+padding: 10px  20px;
+margin: 10px 0px;
 color: whitesmoke;
 background-color: rgb(9, 47, 82);
-border-radius: 30px;
+border-radius: 10px;
+font-size: 20px;
 }
+
+a {
+    background-color: rgb(9, 47, 82)e;
+    transition: background-color .5s;
+  }
+  
+  a:hover {
+    background-color: rgb(32, 146, 167);
+  }
+
 
 .slider {
     width: 1280px;
@@ -116,6 +154,7 @@ border-radius: 30px;
 
 .slider img{
     width: 300px;
+    margin: 30px 0px;
 }
 
 @keyframes cambio {
@@ -132,4 +171,26 @@ border-radius: 30px;
     100% {margin-left:-100%;}
 }
 
+/*Galería Familia*/
 
+.galeria-familia {
+width: 1280px;
+overflow: hidden;
+}
+
+.galeria-familia ul {
+display: flex;
+    padding: 0px;
+    width: 1280px;
+}
+
+.galeria-familia li{
+width: 1280px;
+list-style: none;
+}
+
+.galeria-familia img {
+    width: 300px;
+    height: 400px;
+    margin: 30px 0px;
+}

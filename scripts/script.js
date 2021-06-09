@@ -1,20 +1,12 @@
-function vermas (id)
-    if(id== "mas"){
-        document.getElementById("desplegar").style.display= "block";
-        document.getElementById("mas").style.display= "none";
-    }
-    else {
-        document.getElementById("desplegar").style.display= "none";
-        document.getElementById("mas").style.display= "inline";
-    }
 
-    function vermenos (id)
-    if(id== "menos"){
-        document.getElementById("desplegar").style.display= "block";
-        document.getElementById("menos").style.display= "none";
+// Mostrar u Ocultar la seccion de Leer más...
+function toggleSection() {    
+    var textoOculto = document.getElementById("toggleBloque");  
+      if (!textoOculto.style.display || textoOculto.style.display === "none") {  
+          textoOculto.style.display = "block";       
+          document.getElementById("toggleBloque").textContent = "Leer menos";   
+     } else {       
+          textoOculto.style.display = "none";        
+          document.getElementById("toggleBloque").textContent = "Leer más";    
+        }
     }
-    else {
-        document.getElementById("desplegar").style.display= "none";
-        document.getElementById("menos").style.display= "inline";
-    }
-
