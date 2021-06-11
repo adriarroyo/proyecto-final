@@ -7,48 +7,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería</title>
     <script src="https://kit.fontawesome.com/c672bf2245.js" crossorigin="anonymous"></script>
-    <script src="https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 
-<body> 
+<body class="body"> 
 
     <header id="main-nav">
     <main class="container">
     <img class= "img-logo" src="images/escritorio/proyecto final/logo.jpg" alt="imagen" width="300px"><img> 
     <h1 class="h1"> Introducción al Desarrollo Web </h1>  
     <nav class="menu">
-    <a href="index.html" target="_blank" class="span-menu"> Inicio |</a>
-    <a href="biografia.html" target="_blank" class="span-menu" >Biografía |</a>
-    <a href="galería.html" target="_blank"class="span-menu">Galería |</a>
+    <a href="index.html"  class="span-menu"> Inicio |</a>
+    <a href="biografia.html" class="span-menu" >Biografía |</a>
+    <a href="galería.html" class="span-menu">Galería |</a>
     </nav> 
 </main>
     </header>
-
-
-<h2 class="span-galeria">Galería</h2>
-
-<a href="familia.html" target="_blank" class="button">Familia</a>
-<a href="mascotas.html" target="_blank" class="button">Mascotas</a>
-<a href="paseos.html" target="_blank" class="button">Paseos</a>
-
-<div class="slider">
-   <ul>
-       <li><img src="images/escritorio/proyecto final/cocina.jpg" alt="cocina"></li>
-       <li><img src="images/escritorio/proyecto final/desiertoatacama.jpg" alt="desiertoatacama"></li>
-       <li><img src="images/escritorio/proyecto final/caballeriza.jpg" alt="caballeriza"></li>
-       <li><img src="images/escritorio/proyecto final/nyc.jpg" alt="nyc"></li>
-   </ul>
-</div>
-
+<main>
+    <section>
+       <h2 class="span-galeria">Galería</h2>
+        <nav id="sidebar">
+           <button id="familia-btn" onclick="showCategory('familia')">Familia</button>
+           <button id="mascotas-btn" onclick="showCategory('mascotas')">Mascotas</button>
+           <button id="paseos-btn" onclick="showCategory('paseos')">Paseos</button>
+        </nav>
+        <div id="gallery">
+            <div class="category" id="familia">
+            <div class="img-card"><img src="images/escritorio/proyecto final/cocina.jpg" alt="familia1" height="300px"></div>
+            <div class="img-card"><img src="images/familia/familia.jpg" alt="familia3"></div>
+            <div class="img-card"><img src="images/familia/familia2.jpg" alt="familia2"></div>
+            <div class="img-card"><img src="images/familia/bluemountain.jpg" alt="familia4" height="300px"></div>
+        </div> 
+        <div class="category" id="mascotas">
+            <div class="img-card"><img src="images/mascotas/creta.jpg" alt="mascotas1"></div>
+            <div class="img-card"><img src="images/mascotas/cuatroalitas.jpg" alt="mascotas2"></div>
+            <div class="img-card"><img src="images/mascotas/Kay.jpg" alt="mascotas3"></div>
+            <div class="img-card"><img src="images/mascotas/sapperbebe.jpg" alt="mascotas4"></div>
+        </div> 
+        <div class="category" id="paseos">
+            <div class="img-card"><img src="images/paseos/desiertoatacama.jpg" alt="paseos1"></div>
+            <div class="img-card"><img src="images/paseos/italia.jpg" alt="paseos2"></div>
+            <div class="img-card"><img src="images/paseos/nyc.jpg" alt="paseos3"></div>
+            <div class="img-card"><img src="images/paseos/puerta.jpg" alt="paseos4"></div>
+        </div> 
+   </section>
+</main>
 
 <footer id="footer">
-<small> &#169;2021 Hecho por Adriana Arroyo Murillo |</small> 
-<i class="fab fa-facebook-square"></i> <a href="https://www.facebook.com/" target="_blank"></a>
-<i class="fab fa-instagram-square"></i> <a href="https://about.instagram.com/es-la" target="_blank"></a> 
-<i class="fab fa-twitter-square"></i> <a href="https://twitter.com/?lang=es" target="_blank"></a>
-<i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/home" target="_blank"></a>
+    <small> &#169;2021 Hecho por Adriana Arroyo Murillo |</small>
+    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square" style="color: whitesmoke;"></i></a>
+    <a href="https://about.instagram.com/es-la" target="_blank"><i class="fab fa-instagram-square" style="color: whitesmoke;"></i></a>
+    <a href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter-square" style="color: whitesmoke;"></i></a>
+    <a href="https://www.linkedin.com/home" target="_blank"><i class="fab fa-linkedin" style="color: whitesmoke;"></i></a>
+    </small> 
 </footer>
 
 <script src="scripts/script.js"></script>

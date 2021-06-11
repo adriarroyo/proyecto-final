@@ -27,6 +27,21 @@ width: 1280px;
 padding-bottom: 10px;
 }
 
+.main-nav {
+    max-width: 1280;
+    margin: 0 auto;
+}
+
+.span-menu {
+    font-size: 15px;
+}
+
+.body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
 /* Menu Páginas */
 
 .menu {
@@ -56,23 +71,21 @@ padding-bottom: 10px;
 .lista-1{
     background-color: rgb(16, 93, 165);
     padding: 10px;
-    width: 620px;
+    width: 600px;
     margin-top: 20px;
     margin-bottom: 20px;
     color: whitesmoke;
-    position: relative;
+    display: inline-block;
 }
 
 .lista-2{
     background-color: rgb(24, 168, 173);
     padding: 10px;
-    width: 620px;
+    width: 600px;
     margin-top: 20px;
     margin-bottom: 20px;
     color: whitesmoke;
-    position: absolute;
-    top: 824px;
-    left: 650px;
+    display: inline-block;
 }
 
 
@@ -100,10 +113,9 @@ font-size: 14px;
 #toggleBloque {
     margin: 30px;
     padding: 10px;
-}
-
-#textoOculto {
-    visibility: hidden;
+    background-color: rgb(9, 47, 82);
+    color: whitesmoke;
+    border-radius: 10px;
 }
 
 /* Fin Biografía*/
@@ -112,85 +124,37 @@ font-size: 14px;
 
 .span-galeria{
     font-size: 32px;
-
 }
-.button {
+
+#familia-btn, #mascotas-btn, #paseos-btn {
 padding: 10px  20px;
 margin: 10px 0px;
 color: whitesmoke;
 background-color: rgb(9, 47, 82);
 border-radius: 10px;
-font-size: 20px;
+font-size: 15px;
 }
 
-a {
-    background-color: rgb(9, 47, 82)e;
-    transition: background-color .5s;
-  }
-  
-  a:hover {
-    background-color: rgb(32, 146, 167);
-  }
-
-
-.slider {
-    width: 1280px;
-    overflow: hidden;
+#sidebar button:hover {
+    background-color: rgb(24, 168, 173) !important;
 }
 
-.slider ul{
-    display: flex;
-    padding: 0px;
-    width: 1280px;
-
-    animation: cambio 10s infinite alternate;
-    animation-timing-function: ease-in;
-}
-
-.slider li {
-    width: 1280px;
-    list-style: none;
-}
-
-.slider img{
-    width: 300px;
-    margin: 30px 0px;
-}
-
-@keyframes cambio {
-    0% { margin-left: 0;}
-    20% {margin-left: 0;}
-
-    25% {margin-left: 0;}
-    45% {margin-left: 0;}
-
-    50% {margin-left:0;}
-    70% {margin-left:0;}
-
-    75% {margin-left:-100%;}
-    100% {margin-left:-100%;}
-}
-
-/*Galería Familia*/
-
-.galeria-familia {
-width: 1280px;
+.main section {
+padding: 20px;
 overflow: hidden;
+max-width: 0 auto;
 }
 
-.galeria-familia ul {
-display: flex;
-    padding: 0px;
-    width: 1280px;
-}
-
-.galeria-familia li{
-width: 1280px;
-list-style: none;
-}
-
-.galeria-familia img {
+.category img {
     width: 300px;
-    height: 400px;
-    margin: 30px 0px;
+    display: inline-block;
+    margin: 5px;
+}
+
+div .img-card {
+    display: inline-block;
+}
+
+.img-card img:hover {
+    transform: scale(1.1);
 }
