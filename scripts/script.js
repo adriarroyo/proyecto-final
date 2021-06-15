@@ -10,6 +10,8 @@ function toggleSection() {    
           document.getElementById("toggleBloque").textContent = "Leer más";    
         }
     }
+
+    // Galería fotografías
     function showCategory(type) {
         var mascotasElement = document.getElementById("mascotas");
         var paseosElement = document.getElementById("paseos");
